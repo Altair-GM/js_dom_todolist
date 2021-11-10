@@ -1,0 +1,14 @@
+body {
+  background-color: red;
+}
+body section {
+  height: auto;
+}
+body section div {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  padding: auto;
+}
+
+/*# sourceMappingURL=app.css.map */
