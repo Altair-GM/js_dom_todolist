@@ -1,21 +1,61 @@
+body {
+    background-color: gray;
 
-body{
-    background-color: red;
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-    section{
-        height: auto;
-        div{
-
-            // background-color: blue;
-            display: flex;
-            justify-content: center;
-            background-color: blue;
-            padding: auto;
-           
-        
-                input{
-                    
-                }
+        h1 {
+            text-align: center;
+            font-family: scream;
+            font-size: 400%;
+            color: whitesmoke;
         }
+
+        div {
+            display: flex;
+            justify-content: center
+        }
+
+        .allCmnd {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            height: 10vh;
+            align-items: center;
+
+            button {
+                height: 40%;
+                width: 20%;
+                border-radius: 5px;
+                font-family: scream;
+                font-size: 100%;
+                color: whitesmoke;
+                background-color: royalblue;
+                text-transform: capitalize;
+            }
+        }
+
+        .todoTab {
+            background-color: blue;
+            padding: 0.2%;
+            border-radius: 5px;
+
+            button {
+
+                height: 10%;
+                width: 100%;
+                border-radius: 5px;
+                font-family: scream;
+                font-size: 100%;
+                color: whitesmoke;
+                background-color: royalblue;
+                text-transform: capitalize;
+            }
+
+        }
+
     }
 }
