@@ -37,23 +37,44 @@ body {
                 text-transform: capitalize;
             }
         }
+        
 
         .todoTab {
             background-color: blue;
             padding: 0.2%;
             border-radius: 5px;
 
-            button {
+            .todo{
 
                 height: 10%;
                 width: 100%;
-                border-radius: 5px;
-                font-family: scream;
-                font-size: 100%;
-                color: whitesmoke;
-                background-color: royalblue;
-                text-transform: capitalize;
+                
+                button {
+                    border-radius: 5px;
+                    font-family: scream;
+                    font-size: 100%;
+                    color: whitesmoke;
+                    background-color: royalblue;
+                    text-transform: capitalize;
+    
+                }
             }
+            .liste{
+
+                height: 10%;
+                width: 100%;
+                
+                button {
+                    border-radius: 5px;
+                    font-family: scream;
+                    font-size: 100%;
+                    color: whitesmoke;
+                    background-color: royalblue;
+                    text-transform: capitalize;
+    
+                }
+            }
+
 
         }
 

@@ -39,9 +39,23 @@ body section .todoTab {
   padding: 0.2%;
   border-radius: 5px;
 }
-body section .todoTab button {
+body section .todoTab .todo {
   height: 10%;
   width: 100%;
+}
+body section .todoTab .todo button {
+  border-radius: 5px;
+  font-family: scream;
+  font-size: 100%;
+  color: whitesmoke;
+  background-color: royalblue;
+  text-transform: capitalize;
+}
+body section .todoTab .liste {
+  height: 10%;
+  width: 100%;
+}
+body section .todoTab .liste button {
   border-radius: 5px;
   font-family: scream;
   font-size: 100%;
