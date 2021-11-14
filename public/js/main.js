@@ -2,21 +2,34 @@
 let allCmnd = document.querySelector(".allCmnd").children
 let todo = document.querySelector(".todo").children
 let todoTab = document.querySelector(".todoTab")
-console.log(todo);
+let todoTab2 = document.getElementsByClassName("todoTab")[0]
+let todo2 = document.getElementsByClassName("todo")[0]
 let input = document.querySelector("input")
+let liste = document.getElementById("liste")
+let liste2 = document.querySelector("#liste").children
 
-console.log(input);
+let input2 = document.createElement("input")
+input2.value =  input
+let btn1 = document.createElement("button")
+btn1.innerHTML = '<i class="far fa-check-circle"></i>'
+let btn2 = document.createElement("button")
+btn2.innerHTML = '<i class="far fa-edit"></i>'
+let btn3 = document.createElement("button")
+btn3.innerHTML = '<i class="fas fa-backspace"></i>'
+
+let mdl = [input, btn1, btn2, btn3]
+
 // button all
 let ended = allCmnd[0]
 let toDo = allCmnd[1]
 let all = allCmnd[2]
 //  button input
-let clear = todo[1]
-let modif = todo[2]
-let delet = todo[3]
-let add = todo[4]
-let clonage = [input,clear,modif,delet,add]
-console.log(clonage);
+let add = todo[1]
+// let clear = btn1
+// let modif = btn2
+// let delet = btn3
+
+// let clonage = [input,clear,modif,delet,add]
 // console.log(clear);
 // [[[[[[[[[[[[[[[[[[[Commandes generales]]]]]]]]]]]]]]]]]]]
 
@@ -32,45 +45,83 @@ all.addEventListener("click", () => {
 // [[[[[[[[[[[[[[[[[[[[[commandes input]]]]]]]]]]]]]]]]]]]]]
 
 
-clear.addEventListener("click", () => {
-    if (clear.style.color == "green") {
-        clear.style.color = "red"
-        clear.style.backgroundColor = "black"
-
+btn1.addEventListener("click", () => {
+    if (input.style.backgroundColor == "green") {
+        input.style.backgroundColor = "red"
+        // input.style.backgroundColor = "black"
     } else {
-        clear.style.color = "green"
-        clear.style.backgroundColor = "white"
+        input.style.backgroundColor = "green"
+        // input.style.backgroundColor = "white"
     }
 })
-modif.addEventListener("click", () => {
+btn2.addEventListener("click", () => {
     if (input.disabled == true) {
         input.disabled = false
     } else {
         input.disabled = true
     }
 })
-delet.addEventListener("click", () => {
+btn3.addEventListener("click", () => {
     input.value = ""
 })
- 
-let mutiClonage = (el) =>{
-    let clone = el
-    let suite = el.cloneNode(true)
-    suite.children[0].value = ""
-    clone.appendChild(suite)
-}
-add.addEventListener("click", () => {
-mutiClonage(todo)
-console.log(conage);
-// let genliste = document.createElement("div")
-// genliste.classList.add('liste');
-// genliste.textContent = "liste"
-// console.log(genliste);
-// todoTab.appendChild(genliste)
 
+console.log(todo2);
+add.addEventListener("click",(e) => {
+    mutiClonage(todo2)
+    monsterGenerator(liste)
+    
+    
 })
 
+
+
+
+
+
+
+// // Keyup => pour le fonctionnement Enter
+// if (e.key === 'Enter'|| e.Keycode === 13) {
+    
+// }
+
 console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// {{{{{{{{{{{{{{{{{{{{{{{{Laboratoire de fonctions}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+// function Monster_generator @{+_+}@
+
+let monsterGenerator = (parent) =>{
+    mdl.forEach(el => {
+    
+        parent.appendChild(el)
+    });
+  
+}
+
+//  [[[[[[[[[[[[[[[""""""""""""""""function clonage""""""""""""""""]]]]]]]]]]]]]]]
+
+let mutiClonage = (el) =>{   
+   
+    let clone = el
+    let suite = el.cloneNode(true)
+    clone.appendChild(suite) 
+
+    // suite.children[0].value = ""
+
+}
 
 
 
@@ -125,9 +176,9 @@ console.log();
 // var i = 1;
 // let duplic = (element) =>
 // {
-    //    i++;
-    //    clone = element.cloneNode(true);
-    //    clone.name = element + '' + i;
-    // }
-    
-    // duplic(clonage)
+//    i++;
+//    clone = element.cloneNode(true);
+//    clone.name = element + '' + i;
+// }
+
+// duplic(clonage)

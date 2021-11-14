@@ -38,9 +38,13 @@ body section .todoTab {
   background-color: blue;
   padding: 0.2%;
   border-radius: 5px;
+  width: 75%;
 }
 body section .todoTab .todo {
   height: 10%;
+  width: 100%;
+}
+body section .todoTab .todo input {
   width: 100%;
 }
 body section .todoTab .todo button {
@@ -51,17 +55,25 @@ body section .todoTab .todo button {
   background-color: royalblue;
   text-transform: capitalize;
 }
-body section .todoTab .liste {
-  height: 10%;
+body section #liste {
   width: 100%;
+  height: 5vh;
+  margin: 5%;
+  display: flex;
 }
-body section .todoTab .liste button {
+body section #liste input {
+  width: 50%;
+  height: 75%;
+  border-radius: 5px;
+}
+body section #liste button {
   border-radius: 5px;
   font-family: scream;
   font-size: 100%;
   color: whitesmoke;
   background-color: royalblue;
   text-transform: capitalize;
+  height: 90%;
 }
 
 @font-face {
