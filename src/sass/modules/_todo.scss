@@ -13,6 +13,9 @@ body {
             font-family: scream;
             font-size: 400%;
             color: whitesmoke;
+            span{
+                font-size: 50%;
+            }
         }
 
         div {
@@ -35,13 +38,15 @@ body {
                 font-family: scream;
                 font-size: 100%;
                 color: whitesmoke;
-                background-color: royalblue;
+                background-color:dimgray ;
+                box-shadow: black 0px 0px 5px 5px ;
                 text-transform: capitalize;
             }
         }
     
         .todoTab {
-            background-color: blue;
+            background-color: darkgray;
+            box-shadow: black 0px 0px 25px 5px ;
             padding: 0.2%;
             border-radius: 5px;
             width: 75%;
@@ -59,7 +64,7 @@ body {
                     font-family: scream;
                     font-size: 100%;
                     color: whitesmoke;
-                    background-color: royalblue;
+                    background-color: dimgrey;
                     text-transform: capitalize;
     
                 }
@@ -68,18 +73,24 @@ body {
             
         }
         
+        h2{
+            font-family:scream;
+            color: whitesmoke;
+            font-size: 200%;
+        }
         .liste{
-            background-color: red;
+            background-color: darkgray;
             width: 60%; height: max-content;
             border-radius: 15px;
-            
            margin: 1%;
            display: flex;
            flex-direction: column;
            text-align: center;
+           box-shadow: black 0px 0px 25px 5px ;
            div{
                margin: 1%;
                display: flex;
+               
                
                input{
                    width: 50%; height: 100%;
@@ -92,7 +103,7 @@ body {
                     font-family: scream;
                     font-size: 100%;
                     color: whitesmoke;
-                    background-color: royalblue;
+                    background-color: dimgrey;
                     text-transform: capitalize;
                     height: 110%;
     

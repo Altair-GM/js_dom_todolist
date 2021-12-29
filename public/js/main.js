@@ -51,20 +51,22 @@ all.addEventListener("click", () => {
 /* ----------------------------- commandes input ---------------------------- */
 
 add.addEventListener("click", (e) => {
-  console.log(e);
-  if (input.value == "") {
-    alert("Villez rentrere une tache");
-  }
-  /* ------------------------------- iv phantom ------------------------------- */
-
-  let input2 = document.createElement("input");
-  let btn1 = document.createElement("button");
-  btn1.innerHTML = '<i class="far fa-check-circle"></i>';
-  let btn2 = document.createElement("button");
-  btn2.innerHTML = '<i class="far fa-edit"></i>';
-  let btn3 = document.createElement("button");
-  btn3.innerHTML = '<i class="fas fa-backspace"></i>';
-  let mdl = [input2, btn1, btn2, btn3];
+    /* ------------------------------- iv phantom ------------------------------- */
+    
+    
+    let input2 = document.createElement("input");
+    let btn1 = document.createElement("button");
+    btn1.innerHTML = '<i class="far fa-check-circle"></i>';
+    let btn2 = document.createElement("button");
+    btn2.innerHTML = '<i class="far fa-edit"></i>';
+    let btn3 = document.createElement("button");
+    btn3.innerHTML = '<i class="fas fa-backspace"></i>';
+    let mdl = [input2, btn1, btn2, btn3];
+    
+    // console.log(e);
+    // if (input.value == "") {
+    //   alert("Villez rentrere une tache");
+    // }
 
   btn1.addEventListener("click", () => {
     if (input2.style.backgroundColor == "green") {

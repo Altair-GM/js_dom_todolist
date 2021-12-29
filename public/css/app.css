@@ -14,6 +14,9 @@ body section h1 {
   font-size: 400%;
   color: whitesmoke;
 }
+body section h1 span {
+  font-size: 50%;
+}
 body section div {
   display: flex;
   justify-content: center;
@@ -32,11 +35,13 @@ body section .allCmnd button {
   font-family: scream;
   font-size: 100%;
   color: whitesmoke;
-  background-color: royalblue;
+  background-color: dimgray;
+  box-shadow: black 0px 0px 5px 5px;
   text-transform: capitalize;
 }
 body section .todoTab {
-  background-color: blue;
+  background-color: darkgray;
+  box-shadow: black 0px 0px 25px 5px;
   padding: 0.2%;
   border-radius: 5px;
   width: 75%;
@@ -53,11 +58,16 @@ body section .todoTab .todo button {
   font-family: scream;
   font-size: 100%;
   color: whitesmoke;
-  background-color: royalblue;
+  background-color: dimgrey;
   text-transform: capitalize;
 }
+body section h2 {
+  font-family: scream;
+  color: whitesmoke;
+  font-size: 200%;
+}
 body section .liste {
-  background-color: red;
+  background-color: darkgray;
   width: 60%;
   height: max-content;
   border-radius: 15px;
@@ -65,6 +75,7 @@ body section .liste {
   display: flex;
   flex-direction: column;
   text-align: center;
+  box-shadow: black 0px 0px 25px 5px;
 }
 body section .liste div {
   margin: 1%;
@@ -82,7 +93,7 @@ body section .liste div button {
   font-family: scream;
   font-size: 100%;
   color: whitesmoke;
-  background-color: royalblue;
+  background-color: dimgrey;
   text-transform: capitalize;
   height: 110%;
 }
