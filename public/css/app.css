@@ -6,6 +6,7 @@ body section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: max-content;
 }
 body section h1 {
   text-align: center;
@@ -55,25 +56,35 @@ body section .todoTab .todo button {
   background-color: royalblue;
   text-transform: capitalize;
 }
-body section #liste {
-  width: 100%;
-  height: 5vh;
-  margin: 5%;
+body section .liste {
+  background-color: red;
+  width: 60%;
+  height: max-content;
+  border-radius: 15px;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body section .liste div {
+  margin: 1%;
   display: flex;
 }
-body section #liste input {
+body section .liste div input {
   width: 50%;
-  height: 75%;
+  height: 100%;
   border-radius: 5px;
+  font-size: 150%;
+  font-family: scream;
 }
-body section #liste button {
+body section .liste div button {
   border-radius: 5px;
   font-family: scream;
   font-size: 100%;
   color: whitesmoke;
   background-color: royalblue;
   text-transform: capitalize;
-  height: 90%;
+  height: 110%;
 }
 
 @font-face {
